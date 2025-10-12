@@ -1,23 +1,71 @@
-# Dependencies
-node_modules/
-__pycache__/
-
-# Build
-dist/
-*.pyc
-
-# Environment
+# === Environment Variables ===
+# КРИТИЧНО: не загружать .env файлы!
 .env
 .env.local
+.env.*.local
+**/.env
+backend/.env
+frontend/.env
 
-# IDE
+# === Python (Backend) ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# === Node.js (Frontend) ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# === Build outputs ===
+dist/
+build/
+*.pyc
+.next/
+out/
+
+# === IDEs ===
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
 
-# OS
+# === OS Files ===
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+Desktop.ini
 
-# Python
-venv/
-*.egg-info/
+# === Logs ===
+logs/
+*.log
+
+# === Docker (опционально) ===
+# Раскомментируйте если не хотите коммитить docker-compose override
+# docker-compose.override.yml
+
+# === Misc ===
+.history/
+*.bak
+*.tmp
+*.temp
