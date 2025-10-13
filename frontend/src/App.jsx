@@ -207,7 +207,7 @@ const parseAnalysis = (text) => {
         }
 
         .logo img {
-          height: 30px;
+          height: 25px;
           width: auto;
           display: block;
         }
@@ -244,14 +244,13 @@ const parseAnalysis = (text) => {
         
         .contact-button:hover { background-color: #b8a892; }
         
-        .hero {
-          min-height: calc(100vh - 90px);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: #fff;
-          padding: 50px 40px 25px;
-        }
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 10px 0; /* сверху 60px, снизу 20px */
+  background-color: #fff;
+}
         
         .video-container {
           position: relative;
@@ -260,14 +259,13 @@ const parseAnalysis = (text) => {
           overflow: hidden;
         }
         
-        .hero-image {
-          width: 100%;
-          height: 500px;
-          object-fit: cover;
-          display: block;
-          filter: brightness(0.85);
-          z-index: 0;
-        }
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: cover;
+  display: block;
+}
 
         .play-button {
           position: absolute;
